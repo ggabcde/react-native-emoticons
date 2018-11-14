@@ -92,11 +92,11 @@ class TabBar extends React.Component {
                             <Text style={styles.emoji }>{this.props.tabs[i]}</Text>
                         </TouchableOpacity>;
                     })}
-                      <View
-                        style={{
-                            flex: 1
-                        }}
-                      />
+                  <View
+                    style={{
+                        flex: 1
+                    }}
+                  />
                     <TouchableOpacity
                         disabled={this.props.submitDisabled}
                         onPress={() => {
