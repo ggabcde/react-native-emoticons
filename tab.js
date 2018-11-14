@@ -63,10 +63,6 @@ class TabBar extends React.Component {
     render() {
         return (
             <View style={[styles.tabs, this.props.style, ]}>
-                <ScrollView
-                    horizontal={true}
-                    showsHorizontalScrollIndicator={false}
-                >
                     {this.props.tabs.map((tab, i) => {
                         if(tab === 'plus'){
                             return <TouchableOpacity ref={(component) => this.tabComponent.push(component)}
@@ -114,8 +110,6 @@ class TabBar extends React.Component {
                                 fontSize: 16
                             }}>发送</Text>
                     </TouchableOpacity>
-                </ScrollView>
-
             </View>);
     }
 }
