@@ -96,6 +96,15 @@ class TabBar extends React.Component {
                             <Text style={styles.emoji }>{this.props.tabs[i]}</Text>
                         </TouchableOpacity>;
                     })}
+                    <TouchableOpacity
+                        key={tab}
+                        onPress={() => {}}
+                        style={[styles.tab, {
+                            backgroundColor: '#2196F3'
+                        }]}>
+                            <Text style={{
+                            }}>发送</Text>
+                    </TouchableOpacity>
                 </ScrollView>
 
             </View>);
