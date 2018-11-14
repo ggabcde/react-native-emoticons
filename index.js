@@ -378,6 +378,7 @@ class Emoticons extends React.Component {
 Emoticons.propTypes = {
     onEmoticonPress: PropTypes.func.isRequired,
     onBackspacePress: PropTypes.func,
+    submit: PropTypes.func,
     style: ViewPropTypes.style,
     show: PropTypes.bool,
     concise: PropTypes.bool,
