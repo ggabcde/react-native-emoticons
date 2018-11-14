@@ -71,19 +71,19 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         paddingBottom: 0,
         width: 60,
-        borderRightWidth: 1,
-        borderColor: 'rgba(178,178,178,.3)',
+        borderRightWidth: StyleSheet.hairlineWidth,
+        borderColor: '#E0E0E0',
         backgroundColor: '#fff'
     },
     tabs: {
         height: 40,
         width: width,
         flexDirection: 'row',
-        borderWidth: 1,
+        borderWidth: StyleSheet.hairlineWidth,
         borderBottomWidth: 0,
         borderLeftWidth: 0,
         borderRightWidth: 0,
-        borderTopColor: 'rgba(178,178,178,0.3)',
+        borderTopColor: '#E0E0E0',
         backgroundColor: 'rgba(255,255,255,1)',
     },
     tabsDot: {
