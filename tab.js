@@ -98,17 +98,12 @@ class TabBar extends React.Component {
                         }}
                       />
                     <TouchableOpacity
+                        disabled={this.props.submitDisabled}
                         onPress={() => {
                             this.props.submit()
                         }}
-                        style={[styles.tab, {
-                            backgroundColor: '#2196F3',
-                            width: 80
-                        }]}>
-                            <Text style={{
-                                color: '#FFF',
-                                fontSize: 16
-                            }}>发送</Text>
+                        style={[styles.tab, this.props.submitStyle]}>
+                        <Text style={this.props.submitTextStyle}>{this.props.submitText}</Text>
                     </TouchableOpacity>
             </View>);
     }
